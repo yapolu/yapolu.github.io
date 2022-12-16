@@ -1,0 +1,12 @@
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    /* background-color: pink; */
+
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);       
+}

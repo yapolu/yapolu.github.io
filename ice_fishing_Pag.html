@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/iceFishingPag.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="portifolio.html">Portifólio</a>
+      <a href="curriculo.html">Currículo</a>
+      <a href="ice_fishing_Pag.html">Ice Fishing</a>
+    </div>
+
+    <main class="container">
+      <div class="h1">
+        <h1>Ice Fishing</h1>
+        <img src="Assets/icefishing.png" alt="Game" style="width: 60%;" />
+      </div>
+
+      <section decricao>
+        <h2>Sobre o jogo</h2>
+
+        <p class="inset">
+          Ice Fishing é um jogo desenvolvido dentro do IFPR campus Curitiba no
+          curso de Programação de Jogos Digitais, disciplina Desenvolvimento de
+          Jogos WEB, feito pelos alunos Gabriela da Rocha de Oliveira e Ruliam
+          dos Santos Oliveira, através da linguagem de JavaScript. O jogo foi pensado para todos os públicos, algo
+          que seja de fácil jogabilidade para todos ao mesmo tempo que seja
+          divertido. Sendo um jogo de simualação de pescaria no gelo, o objetivo de Ice
+          Fishing é conseguir pescar o maior número de peixes que puder dentro
+          do determinado tempo de 5 minutos. O jogador, que vai tomar a posição
+          do urso Jô, deve mover o cursor do mouse para mover a linha para cima
+          e para baixo para pescar os peixes e desviar dos obstáculos. Quando um
+          peixe for fisgado, o jogador deve o levar ao topo e colocá-lo na
+          caixa. Novos obstáculos, como tubarão, caranguejo e bota, surgem à
+          medida em que o jogador pesca os peixes e avança no jogo.
+        </p>
+      </section>
+
+      <section personagens>
+        <h2>Personagens</h2>
+        <table class="a">
+          <tr class="a">
+            <th>Imagem</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+          </tr>
+
+          <tr>
+            <th>
+              <img src="Assets/idle.png" alt="Game" style="width: 30%;" />
+            </th>
+            <th>Jô</th>
+            <td>
+              É o pescador do jogador. Jô adora pescar no gelo e, por ser um
+              urso faminto, pratica pescaria todo dia para conseguir saciar sua
+              grande fome.
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <img src="Assets/pacu.png" alt="Game" style="width: 30%;" />
+            </th>
+            <th>Pacu</th>
+            <td>
+              É o peixe amarelo que aparece constantemente na tela do jogo, Jô
+              não gosta muito desse peixe, pois ele não gosta da cor amarela.
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <img src="Assets/tilapia.png" alt="Game" style="width: 30%;" />
+            </th>
+            <th>Tilápia</th>
+            <td>
+              É o peixe cinza que aparece constantemente na tela do jogo, que é
+              o peixe que Jô mais come nas suas refeições, frito ou grelhado
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <img src="Assets/salmao.png" alt="Game" style="width: 30%;" />
+            </th>
+            <th>Salmão</th>
+            <td>
+              É o peixe laranja que aparece constantemente na tela do jogo,
+              sendo o peixe preferido do urso Jô para fazer banquetes culinários
+              inspirado na cultura japonesa.
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <img
+                src="Assets/iconminhoca.png"
+                alt="Game"
+                style="width: 20%;"
+              />
+            </th>
+            <th>Isca</th>
+            <td>É a minhoca usada como isca que Jô usa para pescar</td>
+          </tr>
+
+          <tr>
+            <th>
+              <img
+                src="Assets/lataMinhoca.png"
+                alt="Game"
+                style="width: 10%;"
+              />
+            </th>
+            <th>Lata de minhoca</th>
+            <td>
+              É uma lata de uma minhoca que quando o player colheta, recebe essa
+              uma minhoca, que seria uma isca extra.
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <img src="Assets/bota.png" alt="Game" style="width: 15%;" />
+            </th>
+            <th>Bota</th>
+            <td>
+              É um lixo marinho descartado indevidamente. Uma vez que o Jô passa
+              o anzol por ela, ele perde uma vida e o peixe, se estiver com ele
+              na isca.
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <img src="Assets/caranguejo.png" alt="Game" style="width: 30%;" />
+            </th>
+            <th>Caranguejo</th>
+            <td>
+              É um caranguejo que anda pela superfície do gelo de ponta cabeça e
+              apenas aparece para cortar a linha da vara de pescar de Jô, o que
+              faz com que ele perca uma isca.
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <img src="Assets/tubarao.png" alt="Game" style="width: 30%;" />
+            </th>
+            <th>Tubarão</th>
+            <td>
+              É um tubarão que apenas atrapalha a pescada de Jô, sempre comendo
+              a isca do anzol quando encontra ela.
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+      <section>
+        <container class="jogo">
+        <canvas id="canvas" width="1200" height="750"></canvas>
+        <script src="Scripts/Classes.js" charset="utf-8"></script>
+        <script src="Scripts/game.js" charset="utf-8"></script>
+        </container>
+      </section>
+
+    <footer>
+      <p>Copyright</p>
+    </footer>
+  </body>
+</html>
