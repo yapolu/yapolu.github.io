@@ -2,32 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/portifolio.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <div class="navbar">
-      <a href="index.html">Home</a>
-      <a href="portifolio.html">Portifólio</a>
-      <a href="curriculo.html">Currículo</a>
+      <a href="index.html">Trabalho</a>
+      <a href="portifolio.html">Logs</a>
+      <a href="curriculo.html">Código Fonte</a>
       <a href="ice_fishing_Pag.html">Ice Fishing</a>
     </div>
 
+    <div class="header-content">
+        <h2>Universidade Federal do Paraná</h2>
+        <h3>Departamento de Informática</h3>
+        <h4>Disciplina CI1056 - Algoritmos e Estruturas de Dados II</h4>
+        <h5>2º Período do BCC & IBM</h5>
+        <h6>Prof. Elias P. Duarte Jr.</h6>
+        <p><strong>Trabalho Prático (Individual): Ordenação e Pesquisa</strong></p>
+    </div>
+    
+
     <section class="index">
-      <img src="Assets/fotoPerfil.jpeg" alt="Gabriela" />
-      <h1>Gabriela da Rocha</h1>
+        <h1 class="titulo-com-borda"> Trabalho de Ordenação e Pesquisa</h1>
       <p>
-        Eu sou Gabriela e tenho 17 anos. Concluí meus estudos no IFPR com
-        técnico integrado em Programação de Jogos Digitais, onde obtive nas
-        linguagens de programação C++, JavaScript, HTML, CSS e C#, também
-        conhecimento básico com Unity e Blender. Eu procuro ingressar na área de
-        Informática Biomédica, trabalhando com computação aplicada na área da
-        saúde.
+        O trabalho foi iniciado com a construção do arquivo function.c, onde implementei inicialmente as funções de ordenação e pesquisa dadas em sala de aula. Após ter as funções básicas prontas, comecei a desenvolver o esqueleto do main.c, criando um menu para chamar essas funções.
+O menu foi estruturado com as seguintes opções:
+Gerar um novo vetor
+A geração de um novo vetor é feita dentro do int vetor com números aleatórios entre 0 e 2048, utilizando a função rand.
+Exibir o vetor.
+A exibição do vetor mostra de forma compacta as 10 primeiras e as 10 últimas posições do vetor.
+Ordenar o vetor usando diferentes algoritmos.
+A ordenação é realizada pelos algoritmos ShellSort, QuickSort e SelectionSort. Para cada algoritmo, as variáveis comparações e trocas são zeradas antes de iniciar a ordenação, assim como a função copia_vetor é chamada, que responsável por copiar os valores do vetor original para o vetor auxiliar antes de cada ordenação, garantindo que o vetor original não seja alterado. Desta forma, uso int VetorAux como parâmetro nas funções de ordenação. O resultado é mostrado após cada ordenação, com a quantidade de comparações e trocas realizadas.
+Realizar buscas dentro do vetor.
+As buscas são realizadas pela Pesquisa Sequencial e pela Pesquisa Binária. O programa permite que o usuário escolha um número aleatório ou digite o valor a ser buscado. O número de comparações realizadas durante a busca é exibido, juntamente com a informação de se o elemento foi encontrado ou não. A função Pesquisas é usada para evitar a repetição de código na exibição dos resultados.
+Encerrar o programa.
+Dá fim ao programa.
+Após cada ação (exceto a opção 0), o menu é mostrado novamente para o usuário fazer uma nova escolha.
+
       </p>
+      <a href="curriculo.html" target="_self"><button class="botaoIndex">Logs</button></a>
+      <a href="portifolio.html" target="_self"><button class="botaoIndex">Código fonte</button></a>
     </section>
 
-    <footer>
-      <p>Copyright</p>
-    </footer>
   </body>
 </html>
